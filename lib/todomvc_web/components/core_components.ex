@@ -17,7 +17,8 @@ defmodule TodomvcWeb.CoreComponents do
   use Phoenix.Component
 
   alias Phoenix.LiveView.JS
-  import TodomvcWeb.Gettext
+  # import TodomvcWeb.Gettext
+  use Gettext, backend: TodomvcWeb.Gettext
 
   @doc """
   Renders a modal.

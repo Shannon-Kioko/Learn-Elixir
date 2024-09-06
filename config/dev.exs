@@ -3,9 +3,9 @@ import Config
 # Configure your database
 config :todomvc, Todomvc.Repo,
   username: "postgres",
-  password: "postgres",
+  password: '11',
   hostname: "localhost",
-  database: "todomvc_dev",
+  database: "taskmanager",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10

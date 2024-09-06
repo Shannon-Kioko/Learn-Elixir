@@ -17,8 +17,12 @@ defmodule TodomvcWeb.Router do
   scope "/", TodomvcWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
-  end
+    # get "/", PageController, :home
+  # end
+
+    get "/", TaskController, :index
+    resources "/tasks", TaskController, :index
+end
 
   # Other scopes may use custom stacks.
   # scope "/api", TodomvcWeb do
